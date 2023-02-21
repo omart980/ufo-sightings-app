@@ -25,10 +25,6 @@ import toiletpaper from '../images/toiletpaper.jpg'
 import toystory from '../images/toystory.jpeg'
 import truth from '../images/truth.jpeg'
 
-
-
-
-
 const Memes =() => {
     return (
         
