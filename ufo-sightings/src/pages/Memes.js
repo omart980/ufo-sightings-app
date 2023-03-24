@@ -1,11 +1,11 @@
 import "./Memes.css";
-import React from 'react';
+import React, { useState } from "react";
+
 import Aliencow from '../images/Aliencow.jpeg';
 import meme2021 from '../images/meme2021.jpg'
 import alienvspredator from '../images/alienvspredator.jpg'
 import americandad from '../images/americandad.jpg'
 import baby from '../images/baby.jpg'
-
 import couch from '../images/couch.jpg'
 import crudo from '../images/crudo.jpg'
 import drugs from '../images/drugs.jpg'
@@ -25,43 +25,27 @@ import toiletpaper from '../images/toiletpaper.jpg'
 import toystory from '../images/toystory.jpeg'
 import truth from '../images/truth.jpeg'
 
-const Memes =() => {
-    return (
-        
-        
-        <div className="memes">
-            
-            <img  src={Aliencow} className="meme-photo" alt="Cow"/>
-            <img  src={meme2021} className="meme-photo" alt="2021"/>
-            <img  src={alienvspredator} className="meme-photo" alt="Predator"/>
-            <img  src={americandad} className="meme-photo" alt="american dad"/>
-            <img  src={baby} className="meme-photo"alt="baby"/>
-            <img  src={couch} className="meme-photo"alt="couch"/>
-            <img  src={crudo} className="meme-photo" alt="crudo"/>
-            <img  src={drugs} className="meme-photo"alt="drugs"/>
-            <img  src={everywhere} className="meme-photo" alt="everywhere"/>
-            <img  src={hey} className="meme-photo" alt="hey"/>
-            <img  src={humans} className="meme-photo" alt="humans"/>
-            <img  src={idioma} className="meme-photo"alt="idioma"/>
-            <img  src={job} className="meme-photo" alt="job"/>
-            <img  src={meeting} className="meme-photo" alt="meeting"/>
-            <img  src={millionaire} className="meme-photo" alt="millionaire"/>
-            <img  src={money} className="meme-photo" alt="money"/>
-            <img  src={otravez} className="meme-photo" alt="otra vez"/>
-            <img  src={overhead} className="meme-photo" alt="overhead"/>
-            <img  src={selfparking} className="meme-photo" alt="parking"/>
-            <img  src={simpsons} className="meme-photo" alt="simpsons"/>
-            <img  src={toiletpaper} className="meme-photo" alt="toilet"/>
-            <img  src={toystory} className="meme-photo" alt="toy story"/>
-            <img  src={truth} className="meme-photo" alt="truth"/>
+const images = [
+  Aliencow, meme2021, alienvspredator, americandad, baby, couch, crudo,
+  drugs, everywhere, hey, humans, idioma, job, meeting, millionaire, money,
+  otravez, overhead, selfparking, simpsons, toiletpaper, toystory, truth,
+];
 
+function Memes() {
+  const [currentImage, setImage] = useState(images[0]);
 
-            
-          
-
-            
-        </div>
-        
-    )
+function handleClick() {
+    const randomIndex = Math.floor(Math.random() * images.length);
+    setImage(images[randomIndex]);
 }
+
+  return (
+    <div className="display">
+      <img src={currentImage} alt="Random" style={{ width: "75%", height: "auto" }}/>
+      <br />
+      <button className="button_click" onClick={handleClick}>Generate random picture</button>
+    </div>
+  );
+}
+
 export default Memes;
