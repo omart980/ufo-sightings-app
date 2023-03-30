@@ -19,7 +19,7 @@ const Navigation = () => {
         </Navbar.Brand>
     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
     <Navbar.Collapse id="responsive-navbar-nav">
-        <Nav  className="mr-auto" defaultActiveKey="/home" >
+        <Nav  className="links" defaultActiveKey="/home" >
               <Link class="link" to="/about">About</Link>
               <Link class="link" to="/sightings">Sightings</Link>
               <Link class="link" to="/shows">Shows</Link>

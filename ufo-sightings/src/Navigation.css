@@ -1,14 +1,20 @@
-.mr-auto{
+.links{
   margin-left: 30px;
 }
 
 .link{
-  color: white;
   text-decoration: none;
   margin-left: 30px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333333;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+  color: white;
 }
 
 .alien_logo{
-  border-radius: 50%
+  border-radius: 50%;
 }
+
 
