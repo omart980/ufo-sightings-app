@@ -1,12 +1,12 @@
+.sighting h2{
+    color: #FF4433;
+}
 
+.sighting p{ /*template*/
+    font-size: 20px;
+}
 
-
-/*
-@keyframes typing {
-    from {
-      width: 0;
-    }
-    to {
-      width: 100%;
-    }
-  }*/
+.sighting{
+    margin-left: 60px;
+    margin-left: 60px;
+}

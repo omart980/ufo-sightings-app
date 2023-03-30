@@ -26,7 +26,7 @@ const Sightings = () => {
       <div className="sighting">
         <h2>Kenneth Arnold</h2>
         <img src={Image} width="600" height="400" alt="cam"/>
-        <p className="template"> {text}
+        <p>{text}
 
         </p>
       </div>
@@ -34,8 +34,14 @@ const Sightings = () => {
       <div className="sighting">
         <h2>Roswell</h2>
         <img src={ImageTwo} width="600" height="400" alt="cam"/>
-        <p className="template"> {fullText}
-        
+        <p>
+          In the summer of 1947, 
+          rancher William “Mac” Brazel discovered mysterious debris in one of 
+          his New Mexico pastures, including metallic rods, chunks of plastic 
+          and unusual, papery scraps. After Brazel reported the wreckage, soldiers 
+          from nearby Roswell Army Air Force Base came to retrieve the materials. 
+          News headlines claimed that a “flying saucer” crashed in Roswell, 
+          but military officials said it was only a downed weather balloon. 
         </p>
       </div>
 
@@ -43,7 +49,7 @@ const Sightings = () => {
         <h2>Lubbock Lights</h2>
         <img src={ImageThree} width="600" height="400" alt="cam"/>
         <p>
-          {/*<span className="animation">*/}On the evening of August 25, 1951, three science professors from Texas 
+          On the evening of August 25, 1951, three science professors from Texas 
           Tech were enjoying an evening outdoors in Lubbock, when they looked up 
           and saw a semicircle of lights flying above them at a high speed. Over 
           the next few days, dozens of reports flooded in from across town—Texas 
@@ -56,7 +62,6 @@ const Sightings = () => {
           reflecting the luminescence from Lubbock’s new street lamps. Many people 
           who saw the lights, however, refuse to accept this explanation, arguing 
           that the lights were flying too fast.
-          
         </p>
       </div>
     </div>
