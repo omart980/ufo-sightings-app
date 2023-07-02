@@ -1,7 +1,7 @@
 
 # UFO Sightings 👽👽👽
 
-![App Screenshot](https://play-lh.googleusercontent.com/gVutpjEtcAG7Cbsm0Hwldge3k9_OKHRKcElwSGG5eY4rguea0lO7BMMuxNyutcRGbvoI=w526-h296-rw)
+![App Screenshot](ufo-sightings/src/backbround_image/readme.png)
 
 ## Description
 If you are an alien enthusiast, this is the site for you. You can explore more about famous sightings and interesting facts about alien or UFO lore. 
