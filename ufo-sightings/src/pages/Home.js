@@ -2,8 +2,8 @@ import React, { useEffect } from 'react';
 import './Home.css';
 
 const Home = () => {
-  document.body.style = 'background: #000000;';
   useEffect(() => {
+    document.body.style = 'background: #000000;';
     const lottieScript = document.createElement('script');
     lottieScript.src =
       'https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js';
@@ -14,7 +14,7 @@ const Home = () => {
       <lottie-player src="https://assets4.lottiefiles.com/private_files/lf30_fA5yqD.json"
         background="transparent"
         speed="1"
-        style="width: 300px; height: 300px; margin: 0 auto;"
+        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; margin-top: 50px"
         loop
         autoplay>
       </lottie-player>
@@ -30,11 +30,14 @@ const Home = () => {
   }, []);
 
   return (
-    <div className="blue_box p-5">
-      <h1>If you believe in extraterrestrials...<br /> welcome!</h1>
-      <p>Navigate through the navigation bar</p>
+    <div className="home-container">
+      <div className="blue_box p-5">
+        <h1 className="title">If you believe in extraterrestrials...<br /> welcome!</h1>
+        <p className="description">Navigate through the navigation bar</p>
+      </div>
     </div>
   );
 };
 
 export default Home;
+

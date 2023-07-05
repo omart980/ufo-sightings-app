@@ -1,16 +1,42 @@
-.blue_box h1{
-    font-size: 50px;
+.home-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .blue_box {
+    position: relative;
+    z-index: 1;
+    margin: 10% auto;
+    text-align: center;
+  }
+  
+  .blue_box h1 {
+    font-size: 4rem;
     color: #FFFFF0;
-}
-
-.blue_box p{
+  }
+  
+  .blue_box p {
+    font-size: 2rem;
     color: #FFFFF0;
-}
-
-.blue_box {
-    background-image: url("../backbround_image/ufo_ship.jpg.webp");
-    border-radius: 50px;
-    margin-left: 50px; 
-    margin-right: 50px; 
-    margin-top: 100px;
-}
+  }
+  
+  @media (max-width: 768px) {
+    .blue_box {
+      margin: 5% auto;
+    }
+  
+    .blue_box h1 {
+      font-size: 3rem;
+    }
+  
+    .blue_box p {
+      font-size: 1.5rem;
+    }
+  }
+  
+  body {
+    margin: 0;
+  }
+  
