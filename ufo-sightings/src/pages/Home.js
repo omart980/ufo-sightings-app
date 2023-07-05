@@ -1,7 +1,9 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
 import './Home.css';
 
 const Home = () => {
+  const titleRef = useRef(null);
+
   useEffect(() => {
     document.body.style = 'background: #000000;';
     const lottieScript = document.createElement('script');
@@ -22,6 +24,22 @@ const Home = () => {
 
     document.getElementById('root').appendChild(lottieContainer);
 
+    const titleElement = titleRef.current;
+    if (titleElement) {
+      const text = titleElement.innerHTML;
+      titleElement.innerHTML = ''; // Clear the original text
+
+      let charIndex = 0;
+      const typingEffect = setInterval(() => {
+        if (charIndex < text.length) {
+          titleElement.innerHTML += text.charAt(charIndex);
+          charIndex++;
+        } else {
+          clearInterval(typingEffect);
+        }
+      }, 100);
+    }
+
     // Clean up the dynamically added script and animation container
     return () => {
       document.body.removeChild(lottieScript);
@@ -32,12 +50,11 @@ const Home = () => {
   return (
     <div className="home-container">
       <div className="blue_box p-5">
-        <h1 className="title">If you believe in extraterrestrials...<br /> welcome!</h1>
-        <p className="description">Navigate through the navigation bar</p>
+        <h1 className="title" ref={titleRef}>
+          If you believe in extraterrestrials....</h1>
       </div>
     </div>
   );
 };
 
 export default Home;
-
