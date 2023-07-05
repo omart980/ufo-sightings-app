@@ -6,14 +6,9 @@ import Sightings from "./pages/Sightings"
 import Shows from "./pages/Shows"
 import './App.css';
 
+
 import React from 'react';
-// import ReactDOM from 'react-dom';
-// import { BrowserRouter as Router, Routes , Route } from 'react-router-dom';
 import { Routes , Route } from 'react-router-dom';
-
-// const rootElement = document.getElementById('root');
-// ReactDOM.render(<App />, rootElement);
-
 
 function App() {
   return (
