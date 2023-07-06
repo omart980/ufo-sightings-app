@@ -49,9 +49,10 @@ const Home = () => {
 
   return (
     <div className="home-container">
-      <div className="blue_box p-5">
+      <div className="text_box p-5">
         <h1 className="title" ref={titleRef}>
-          If you believe in extraterrestrials....</h1>
+          If you believe in extraterrestrials.... welcome!
+        </h1>
       </div>
     </div>
   );

@@ -1,43 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=BhuTuka+Expanded+One&family=Rubik+Bubbles&family=Rubik+Puddles&display=swap');
+
 .home-container {
     position: relative;
     width: 100%;
     height: 100vh;
     overflow: hidden;
-  }
+}
   
-  .blue_box {
+.text_box {
     position: relative;
     z-index: 1;
     margin: 10% auto;
     text-align: center;
-  }
+    
+}
   
-  .blue_box h1 {
+.text_box h1 {
     font-size: 4rem;
     color: #FFFFF0;
-  }
+    margin-top: 200px;
+    font-family: 'BhuTuka Expanded One', cursive;
+    font-size: 42px;
+}
+
   
-  .blue_box p {
-    font-size: 2rem;
-    color: #FFFFF0;
-  }
-  
-  @media (max-width: 768px) {
-    .blue_box {
+@media (max-width: 768px) {
+    .text_box {
       margin: 5% auto;
     }
-  
-    .blue_box h1 {
+    .text_box h1 {
       font-size: 3rem;
     }
-  
-    .blue_box p {
-      font-size: 1.5rem;
-    }
-  }
-  
-  body {
-    margin: 0;
-  }
-  
-  
+}
