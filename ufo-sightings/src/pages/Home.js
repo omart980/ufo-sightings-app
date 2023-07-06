@@ -1,11 +1,13 @@
 import React, { useEffect, useRef } from 'react';
 import './Home.css';
 
+document.body.style = 'background: #000000;';
+
 const Home = () => {
   const titleRef = useRef(null);
 
   useEffect(() => {
-    document.body.style = 'background: #000000;';
+    
     const lottieScript = document.createElement('script');
     lottieScript.src =
       'https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js';
