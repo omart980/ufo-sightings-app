@@ -21,7 +21,7 @@ const Sightings = () => {
   }, [index])
   
   return (
-    <div className="about">
+    <div className="sightings_about">
       <h1>Here are the top famous sightings so far!</h1>
       <div className="sighting">
         <h2>Kenneth Arnold</h2>
