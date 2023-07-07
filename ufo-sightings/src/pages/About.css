@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=BhuTuka+Expanded+One&family=Rubik+Bubbles&family=Rubik+Puddles&display=swap');
 
+.background-img {
+    background-image: url("../backbround_image/about_space.jpeg");
+    background-repeat: no-repeat; /* prevents image duplication */
+    background-size: cover; /* covers the entire background */
+  }
+
 .about {
     text-align: center;
     display: flex;
@@ -45,14 +51,14 @@
     }
   }
   
-  .letter-container {
+  .phrase-container {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); /* Center the container */
   }
   
-  .letter {
+  .phrase {
     position: absolute;
     font-family: 'Rubik Bubbles', cursive; /* Use the desired font */
     animation-name: floating-animation;
@@ -64,27 +70,27 @@
 
   }
 
-  .letter-1 {
+  .phrase-1 {
     top: -600px;
     left: 10px;
   }
   
-  .letter-2 {
+  .phrase-2 {
     top: -400px;
     right: 400px;
   }
   
-  .letter-3 {
+  .phrase-3 {
     top: -400px;
     left: 400px;
   }
 
-  .letter-4 {
+  .phrase-4 {
     top: -10px;
     right: 400px;
   }
 
-  .letter-5 {
+  .phrase-5 {
     top: -10px;
     left: 400px;
   }
