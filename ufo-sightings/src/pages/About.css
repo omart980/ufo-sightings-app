@@ -1,14 +1,15 @@
-.about p{
-    font-size: 30px;
-    color:  #FFFFF0;
-}
+.about {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .animation-container {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
 
-.about h1{
-    color:  #FFFFF0;
-}
 
-.about{
-    margin-left: 50px;
-    margin-left: 50px;
-    margin-top: 100px;
-}

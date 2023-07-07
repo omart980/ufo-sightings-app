@@ -1,21 +1,26 @@
-import "./About.css"
-import React from 'react';
-import Image from "../backbround_image/alien.webp";
+import React, { useEffect } from 'react';
+import './About.css';
 
 const About = () => {
+  useEffect(() => {
+    const script = document.createElement('script');
+    script.src = 'https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js';
+    script.async = true;
+    document.body.appendChild(script);
+
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
 
   return (
     <div className="about">
-      <h1>About us</h1>
-      <p>
-          We are enthusiasts about the existence of aliens that
-          we decided to tell the world how we feel. One of the 
-          things we ally with are the words of American astrophysicist
-          , Neil deGrasse Tyson, stating that there is life outside
-          of Earth.
-      </p>
-      <img src={Image} width="600" height="400" alt="cam"/>
+      <h1>About Me</h1>
+      <div className="animation-container">
+        <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_Tkgg8F37jX.json" background="transparent" speed="1" style={{ width: '300px', height: '300px' }} loop autoplay></lottie-player>
+      </div>
     </div>
-  )
-}
+  );
+};
+
 export default About;
