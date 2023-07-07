@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=BhuTuka+Expanded+One&family=Rubik+Bubbles&family=Rubik+Puddles&display=swap');
+
 .about {
     text-align: center;
     display: flex;
@@ -6,10 +8,40 @@
     align-items: center;
     height: 100vh;
   }
+
+  .about h1{
+    color: white;
+    font-family: 'BhuTuka Expanded One', cursive;
+  }
   
   .animation-container {
+    position: relative;
     margin-top: auto;
-    margin-bottom: auto;
+    margin-bottom: 1em;
   }
-
-
+  
+  .moon-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .rotating-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(0deg);
+    animation-name: rotating-animation;
+    animation-duration: 5s; /* Set the same duration as the moon animation */
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes rotating-animation {
+    0% {
+      transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+      transform: translate(-50%, -50%) rotate(360deg);
+    }
+  }
+  

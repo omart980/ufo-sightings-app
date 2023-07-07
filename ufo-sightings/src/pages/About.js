@@ -15,10 +15,19 @@ const About = () => {
 
   return (
     <div className="about">
-      <h1>About Me</h1>
       <div className="animation-container">
-        <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_Tkgg8F37jX.json" background="transparent" speed="1" style={{ width: '300px', height: '300px' }} loop autoplay></lottie-player>
+        <div className="moon-container">
+          <lottie-player
+            src="https://assets1.lottiefiles.com/packages/lf20_Tkgg8F37jX.json"
+            background="transparent"
+            speed="1"
+            style={{ width: '300px', height: '300px' }}
+            loop
+            autoplay
+          ></lottie-player>
+        </div>
       </div>
+      <h1 className="rotating-text">About Me</h1>
     </div>
   );
 };
