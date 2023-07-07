@@ -45,3 +45,58 @@
     }
   }
   
+  .letter-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the container */
+  }
+  
+  .letter {
+    position: absolute;
+    font-family: 'Rubik Bubbles', cursive; /* Use the desired font */
+    animation-name: floating-animation;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    color: white;
+    font-family: 'Rubik Bubbles';
+
+  }
+
+  .letter-1 {
+    top: -600px;
+    left: 10px;
+  }
+  
+  .letter-2 {
+    top: -400px;
+    right: 400px;
+  }
+  
+  .letter-3 {
+    top: -400px;
+    left: 400px;
+  }
+
+  .letter-4 {
+    top: -10px;
+    right: 400px;
+  }
+
+  .letter-5 {
+    top: -10px;
+    left: 400px;
+  }
+  
+  @keyframes floating-animation {
+    0% {
+      transform: translate(-50%, -50%) rotate(360deg) translateY(-50px);
+    }
+    50% {
+      transform: translate(-50%, -50%) rotate(360deg) translateY(50px);
+    }
+    100% {
+      transform: translate(-50%, -50%) rotate(360deg) translateY(-50px);
+    }
+  }
