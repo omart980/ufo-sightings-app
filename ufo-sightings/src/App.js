@@ -3,7 +3,7 @@ import Memes from "./pages/Memes.js"
 import Home from "./pages/Home"
 import About from "./pages/About"
 import Sightings from "./pages/Sightings"
-import Shows from "./pages/Shows"
+import Media from "./pages/Media"
 import './App.css';
 
 
@@ -20,7 +20,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/sightings" element={<Sightings />} />
-        <Route path="/shows" element={<Shows />} />
+        <Route path="/media" element={<Media />} />
         <Route path="/memes" element={<Memes />} />
       </Routes>
     </div>

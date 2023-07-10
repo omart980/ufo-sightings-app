@@ -21,7 +21,7 @@ const Navigation = () => {
         <Nav  className="links" defaultActiveKey="/home" >
               <Link class="link" to="/about">About</Link>
               <Link class="link" to="/sightings">Sightings</Link>
-              <Link class="link" to="/shows">Shows</Link>
+              <Link class="link" to="/media">Media</Link>
               <Link class="link" to="/memes">Memes</Link>
         </Nav>
     </Navbar.Collapse>

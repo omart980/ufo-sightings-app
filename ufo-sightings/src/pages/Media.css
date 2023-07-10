@@ -1,0 +1,31 @@
+.media-img{
+    background-image: url("../backbround_image/media_earthat.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Set the height to 100% of the viewport height */
+  }
+
+  @keyframes floating {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  .media-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+  }
+  
+  .media-item {
+    position: relative;
+    animation: floating 3s infinite;
+  }
+  
