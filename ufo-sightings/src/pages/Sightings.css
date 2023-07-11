@@ -6,8 +6,19 @@
   min-height: 100vh; /* Set a minimum height to ensure the background covers the entire viewport */
 }
 
-.container {
+.big-dipper {
   position: relative;
+}
+
+.star-images img {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  transition: transform 0.3s ease; /* Adds a smooth transition effect */
+}
+
+.star-images img:hover {
+  transform: scale(1.5); /* Increases image on hover */
 }
 
 .star-1 {
@@ -65,3 +76,5 @@
     width: 50px;
     height: 50px;
   }
+  
+  
