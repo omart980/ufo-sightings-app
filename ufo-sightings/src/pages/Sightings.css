@@ -1,70 +1,67 @@
-.image-container{
-    background-image: url("../backbround_image/night-sky-stars.jpg");
-    background-repeat: no-repeat; 
-    background-size: cover; 
+.image-container {
+  position: relative;
+  background-image: url("../background_image/night-sky-stars.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh; /* Set a minimum height to ensure the background covers the entire viewport */
 }
 
 .container {
-    position: relative;
-  }
-  
-  .images img{
-    position: absolute;
-  }
-  
-  .star-1 {
-    top: 30px;
-    left: 20px;
-    width: 200px;
-    height: 150px;
-  }
-  
-  .star-2 {
-    top: 100px;
-    left: 250px;
-    width: 200px;
-    height: 150px;
-  }
- 
-  .star-3 {
-    top: 270px;
-    left: 350px;
-    width: 200px;
-    height: 150px;
-  }
+  position: relative;
+}
 
-  .star-4 {
-    top: 470px;
-    left: 450px;
-    width: 200px;
-    height: 150px;
-  }
+.star-1 {
+  position: absolute;
+  top: 100px;
+  left: 120px;
+  width: 50px;
+  height: 50px;
+}
 
-   /*
+.star-2 {
+  position: absolute;
+  top: 150px;
+  left: 300px;
+  width: 50px;
+  height: 50px;
+}
+
+.star-3 {
+  position: absolute;
+  top: 300px;
+  left: 350px;
+  width: 50px;
+  height: 50px;
+}
+
+.star-4 {
+  position: absolute;
+  top: 450px;
+  left: 430px;
+  width: 50px;
+  height: 50px;
+}
   .star-5 {
-    top: 90px;
-    left: 140px;
+    position: absolute;
+    top: 650px;
+    left: 400px;
+    width: 50px;
+    height: 50px;
   }
+
+
   .star-6 {
-    top: 90px;
-    left: 140px;
+    position: absolute;
+    top: 800px;
+    left: 600px;
+    width: 50px;
+    height: 50px;
   }
+
   .star-7 {
-    top: 90px;
-    left: 140px;
+    position: absolute;
+    top: 700px;
+    left: 800px;
+    width: 50px;
+    height: 50px;
   }
-
-  .star-8 {
-    top: 90px;
-    left: 140px;
-  }
-
-  .star-9 {
-    top: 90px;
-    left: 140px;
-  }
-  
-  .star-10 {
-    top: 90px;
-    left: 140px;
-  }*/

@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=BhuTuka+Expanded+One&family=Rubik+Bubbles&family=Rubik+Puddles&display=swap');
 
 .background-img {
-    background-image: url("../backbround_image/about_space.jpeg");
+    background-image: url("../background_image/about_space.jpeg");
     background-repeat: no-repeat; /* prevents image duplication */
     background-size: cover; /* covers the entire background */
   }

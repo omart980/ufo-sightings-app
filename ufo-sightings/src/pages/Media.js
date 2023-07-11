@@ -36,7 +36,7 @@ const Media = () => {
             loop
             autoplay
           ></lottie-player>
-          <img src="d"/>
+     
         </div>
       </div>
     </div>

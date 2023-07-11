@@ -1,6 +1,6 @@
 import './Navigation.css';
 import React from "react";
-import Image from './backbround_image/alien_logo.jpg';
+import Image from './background_image/alien_logo.jpg';
 import {Navbar, Nav} from 'react-bootstrap';
 import {Link} from "react-router-dom";
 
