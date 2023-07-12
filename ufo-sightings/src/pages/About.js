@@ -12,6 +12,7 @@ const About = () => {
     };
   }, []);
 
+
   return (
     <div className='background-img'>
       <div className="about">

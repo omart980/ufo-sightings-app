@@ -5,8 +5,6 @@ import About from "./pages/About"
 import Sightings from "./pages/Sightings"
 import Media from "./pages/Media"
 import './App.css';
-
-
 import React from 'react';
 import { Routes , Route } from 'react-router-dom';
 
