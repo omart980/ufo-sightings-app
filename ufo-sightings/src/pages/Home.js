@@ -1,13 +1,25 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import './Home.css';
 
 document.body.style = 'background: #000000;';
 
 const Home = () => {
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
   const titleRef = useRef(null);
 
   useEffect(() => {
-    
+    const handleResize = () => {
+      setScreenWidth(window.innerWidth);
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
+  useEffect(() => {
     const lottieScript = document.createElement('script');
     lottieScript.src =
       'https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js';
@@ -29,7 +41,7 @@ const Home = () => {
     const titleElement = titleRef.current;
     if (titleElement) {
       const text = titleElement.innerHTML;
-      titleElement.innerHTML = ''; // Clear the original text
+      titleElement.innerHTML = '';
 
       let charIndex = 0;
       const typingEffect = setInterval(() => {
@@ -42,7 +54,6 @@ const Home = () => {
       }, 100);
     }
 
-    // Clean up the dynamically added script and animation container
     return () => {
       document.body.removeChild(lottieScript);
       document.getElementById('root').removeChild(lottieContainer);
@@ -52,7 +63,14 @@ const Home = () => {
   return (
     <div className="home-container">
       <div className="text_box p-5">
-        <h1 className="title" ref={titleRef}>
+        <h1
+          className="title"
+          ref={titleRef}
+          style={{
+            fontSize: screenWidth <= 768 ? '1.5rem' : '3rem',
+            marginTop: screenWidth <= 768 ? '100px' : '',
+          }}
+        >
           If you believe in extraterrestrials.... welcome!
         </h1>
       </div>

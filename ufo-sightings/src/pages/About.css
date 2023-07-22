@@ -1,65 +1,83 @@
 @import url('https://fonts.googleapis.com/css2?family=BhuTuka+Expanded+One&family=Rubik+Bubbles&family=Rubik+Puddles&display=swap');
-.background-img {
-    background-image: url("../background_image/about_space.jpeg");
-    background-repeat: no-repeat; /* prevents image duplication */
-    background-size: cover; /* covers the entire background */
-  }
 
-.about {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  }
 
-  .about h1{
-    color: white;
-    font-family: 'BhuTuka Expanded One', cursive;
-  }
-  
-  .animation-container {
-    position: relative;
-    margin-top: auto;
-    margin-bottom: 1em;
-  }
-  
-  .moon-container {
-    position: relative;
-    display: inline-block;
-  }
-  
-  .rotating-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
+.rotating-text {
+  color: white;
+  font-family: 'BhuTuka Expanded One', cursive;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  /*height: 80vh;*/
+  margin-bottom: 10px;
+  /*transform: translate(-50%, -50%) rotate(0deg);*/
+  animation-name: rotating-animation;
+  animation-duration: 6s; 
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes rotating-animation {
+  0% {
     transform: translate(-50%, -50%) rotate(0deg);
-    animation-name: rotating-animation;
-    animation-duration: 5s; /* Set the same duration as the moon animation */
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
   }
-  
-  @keyframes rotating-animation {
-    0% {
-      transform: translate(-50%, -50%) rotate(0deg);
-    }
-    100% {
-      transform: translate(-50%, -50%) rotate(360deg);
-    }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
   }
+}
+
+/*Phrases css*/
+.phrase-1 {
+  position: absolute;
+  top: 600px;
+  left: 100px;
+  color: white;
+  font-family: 'BhuTuka Expanded One', cursive;
+}
+
+/*Screen resizing*/
+@media only screen and (max-width: 500px){
+  .moon-container
+  .rotating-text{
+    width: 70%;
+    height: 70%;
+  }
+
+  .rotating-text h1{
+    font-size: 100%;
+    position: relative;
+    top: 20%;
+  }
+
+  .phrase-1{
+    top: 50%;
+    left: 4%;
+    font-size: 90%;
+  }
+}
+
+/*
+@media only screen and (max-width: 800px){
+  .moon-container
+  .rotating-text
+  .phrase-1{
+    width: 70%;
+    height: 70%;
+  }
+}*/
+
+/*
   
   .phrase-container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); /* Center the container */
-  }
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+}
+ 
   
   .phrase {
     position: absolute;
-    font-family: 'Rubik Bubbles', cursive; /* Use the desired font */
+    font-family: 'Rubik Bubbles', cursive; 
     animation-name: floating-animation;
     animation-duration: 5s;
     animation-timing-function: ease-in-out;
@@ -105,3 +123,4 @@
       transform: translate(-50%, -50%) rotate(360deg) translateY(-50px);
     }
   }
+*/
