@@ -13,23 +13,31 @@ const About = () => {
   }, []);
 
   return (
-    <main className='background-img' style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'flex-end', minHeight: '100vh' }}>
-      <section className="rotating-text">
-        <h1>About Me</h1>
-      </section>
-      <section className="moon-container">
-        <lottie-player
-          src="https://assets1.lottiefiles.com/packages/lf20_Tkgg8F37jX.json"
-          background="transparent"
-          speed="1"
-          style={{ width: '300px', height: '300px' }}
-          loop
-          autoplay
+    <main className="container background-image d-flex justify-content-center align-items-center vh-100">
+      <section>
+        <section className="row">
+          <section className="col rotating-text">
+            <h1 className='text-white'>About Me</h1>
+          </section>
+        </section>
+
+        <section className='row row-cols-2 text-warning'>
+          <section className="col p-5">I am an alien enthusiast just like you</section>
+          <section className="col p-5">I would take a souvenir from a UFO</section>
+          <section className="col p-5">Reptilian people are among us</section>
+          <section className="col p-5">Count to ten if you're not an alien</section>
+        </section>
+
+        <section className="d-flex justify-content-center align-items-center moon-container"> {/* Center the animation */}
+          <lottie-player
+            src="https://assets1.lottiefiles.com/packages/lf20_Tkgg8F37jX.json"
+            background="transparent"
+            speed="1"
+            loop
+            autoplay
           >
-        </lottie-player>
-      </section>
-      <section className="phrase-container">
-        <div className="phrase phrase-1">I am an alien enthusiast just like you</div>
+          </lottie-player>
+        </section>
       </section>
     </main>
   );
@@ -37,27 +45,4 @@ const About = () => {
 
 export default About;
 
-/*    <div className='background-img'>
-      <div className="about">
-        <div className="animation-container">
-          <div className="moon-container">
-            <lottie-player
-              src="https://assets1.lottiefiles.com/packages/lf20_Tkgg8F37jX.json"
-              background="transparent"
-              speed="1"
-              style={{ width: '300px', height: '300px' }}
-              loop
-              autoplay
-            ></lottie-player>
-          </div>
-    <section className="phrase-container">
-        <div className="phrase phrase-1">I am an alien enthusiast just like you</div>
-        <div className="phrase phrase-2">I would take a souvenir from a UFO</div>
-        <div className="phrase phrase-3">Reptilian people are among us</div>
-        <div className="phrase phrase-4">Count to ten if you're not an alien</div>
-        <div className="phrase phrase-5">Men in Black was my first likeable alien movie</div>
-      </section>
-        </div>
-        <h1 className="rotating-text">About Me</h1>
-      </div>
-    </div>*/
+

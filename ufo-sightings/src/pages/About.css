@@ -1,31 +1,39 @@
 @import url('https://fonts.googleapis.com/css2?family=BhuTuka+Expanded+One&family=Rubik+Bubbles&family=Rubik+Puddles&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=BhuTuka+Expanded+One&family=Edu+SA+Beginner&family=Rubik+Bubbles&family=Rubik+Puddles&display=swap');
 
 
-.rotating-text {
-  color: white;
-  font-family: 'BhuTuka Expanded One', cursive;
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  /*height: 80vh;*/
-  margin-bottom: 10px;
-  /*transform: translate(-50%, -50%) rotate(0deg);*/
-  animation-name: rotating-animation;
-  animation-duration: 6s; 
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
+.background-image{
+  margin-top: 110px;
 }
 
-@keyframes rotating-animation {
+@media (min-width: 576px) {
+  .moon-container {
+    max-width: 400px; /* Set the maximum width you want for the moon animation */
+    max-height: 300px; /* Set the maximum height you want for the moon animation */
+    margin: 0 auto; /* Center the moon container horizontally */
+  }
+}
+.rotating-text h1{
+  font-family: 'BhuTuka Expanded One', cursive;
+  animation: rotate360 5s linear infinite; 
+  font-size: 35px;
+}
+
+@keyframes rotate360 {
   0% {
-    transform: translate(-50%, -50%) rotate(0deg);
+    transform: rotate(0deg);
   }
   100% {
-    transform: translate(-50%, -50%) rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 
-/*Phrases css*/
+.row{
+  font-family: 'Edu SA Beginner', cursive;
+  font-size: 25px;
+}
+
+/*Phrases css
 .phrase-1 {
   position: absolute;
   top: 600px;
@@ -34,12 +42,38 @@
   font-family: 'BhuTuka Expanded One', cursive;
 }
 
+.phrase-2 {
+  position: absolute;
+  top: 700px;
+  left: 100px;
+  color: white;
+  font-family: 'BhuTuka Expanded One', cursive;
+}
+
+.phrase-3 {
+  position: absolute;
+  top: 800px;
+  left: 100px;
+  color: white;
+  font-family: 'BhuTuka Expanded One', cursive;
+}
+
+.phrase-4 {
+  position: absolute;
+  top: 900px;
+  left: 100px;
+  color: white;
+  font-family: 'BhuTuka Expanded One', cursive;
+}
+*/
+
 /*Screen resizing*/
+
+/*
 @media only screen and (max-width: 500px){
-  .moon-container
-  .rotating-text{
+  .moon-container{
+    position: relative;
     width: 70%;
-    height: 70%;
   }
 
   .rotating-text h1{
@@ -48,79 +82,32 @@
     top: 20%;
   }
 
+  .row{
+    font-size: 65%;
+  }
+
+/*
   .phrase-1{
     top: 50%;
     left: 4%;
     font-size: 90%;
   }
-}
 
-/*
-@media only screen and (max-width: 800px){
-  .moon-container
-  .rotating-text
-  .phrase-1{
-    width: 70%;
-    height: 70%;
+  .phrase-2{
+    top: 55%;
+    left: 4%;
+    font-size: 90%;
+  }
+
+  .phrase-3{
+    top: 60%;
+    left: 4%;
+    font-size: 90%;
+  }
+
+  .phrase-4{
+    top: 65%;
+    left: 4%;
+    font-size: 90%;
   }
 }*/
-
-/*
-  
-  .phrase-container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); 
-}
- 
-  
-  .phrase {
-    position: absolute;
-    font-family: 'Rubik Bubbles', cursive; 
-    animation-name: floating-animation;
-    animation-duration: 5s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
-    color: white;
-    font-family: 'Rubik Bubbles';
-
-  }
-
-  .phrase-1 {
-    top: -600px;
-    left: 10px;
-  }
-  
-  .phrase-2 {
-    top: -400px;
-    right: 400px;
-  }
-  
-  .phrase-3 {
-    top: -400px;
-    left: 400px;
-  }
-
-  .phrase-4 {
-    top: -10px;
-    right: 400px;
-  }
-
-  .phrase-5 {
-    top: -10px;
-    left: 400px;
-  }
-  
-  @keyframes floating-animation {
-    0% {
-      transform: translate(-50%, -50%) rotate(360deg) translateY(-50px);
-    }
-    50% {
-      transform: translate(-50%, -50%) rotate(360deg) translateY(50px);
-    }
-    100% {
-      transform: translate(-50%, -50%) rotate(360deg) translateY(-50px);
-    }
-  }
-*/
