@@ -2,17 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=BhuTuka+Expanded+One&family=Edu+SA+Beginner&family=Rubik+Bubbles&family=Rubik+Puddles&display=swap');
 
 
-.background-image{
+.container{
   margin-top: 110px;
 }
 
-@media (min-width: 576px) {
-  .moon-container {
-    max-width: 400px; /* Set the maximum width you want for the moon animation */
-    max-height: 300px; /* Set the maximum height you want for the moon animation */
-    margin: 0 auto; /* Center the moon container horizontally */
-  }
-}
 .rotating-text h1{
   font-family: 'BhuTuka Expanded One', cursive;
   animation: rotate360 5s linear infinite; 
@@ -28,86 +21,46 @@
   }
 }
 
-.row{
+.description{
   font-family: 'Edu SA Beginner', cursive;
   font-size: 25px;
 }
 
-/*Phrases css
-.phrase-1 {
-  position: absolute;
-  top: 600px;
-  left: 100px;
-  color: white;
-  font-family: 'BhuTuka Expanded One', cursive;
-}
-
-.phrase-2 {
-  position: absolute;
-  top: 700px;
-  left: 100px;
-  color: white;
-  font-family: 'BhuTuka Expanded One', cursive;
-}
-
-.phrase-3 {
-  position: absolute;
-  top: 800px;
-  left: 100px;
-  color: white;
-  font-family: 'BhuTuka Expanded One', cursive;
-}
-
-.phrase-4 {
-  position: absolute;
-  top: 900px;
-  left: 100px;
-  color: white;
-  font-family: 'BhuTuka Expanded One', cursive;
-}
-*/
 
 /*Screen resizing*/
-
-/*
 @media only screen and (max-width: 500px){
-  .moon-container{
-    position: relative;
-    width: 70%;
+  .background-image{
+    margin-top: 150px;
+  }
+  .rotating-text h1{
+    font-size: 100%;
+  }
+
+  .description{
+    font-size: 100%;
+  }
+}
+
+@media (min-width: 520px){
+  .moon-container {
+    max-width: 400px;
+    max-height: 300px; 
+    margin: 0 auto; 
+  }
+}
+
+@media (min-width: 520px) and (max-width: 1024px){
+  .moon-container {
+    max-width: 400px;
+    max-height: 300px; 
+    margin: 0 auto; 
   }
 
   .rotating-text h1{
     font-size: 100%;
-    position: relative;
-    top: 20%;
   }
 
-  .row{
-    font-size: 65%;
+  .description{
+    font-size: 100%;
   }
-
-/*
-  .phrase-1{
-    top: 50%;
-    left: 4%;
-    font-size: 90%;
-  }
-
-  .phrase-2{
-    top: 55%;
-    left: 4%;
-    font-size: 90%;
-  }
-
-  .phrase-3{
-    top: 60%;
-    left: 4%;
-    font-size: 90%;
-  }
-
-  .phrase-4{
-    top: 65%;
-    left: 4%;
-    font-size: 90%;
-  }
-}*/
+}
