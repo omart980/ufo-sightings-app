@@ -1,6 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=BhuTuka+Expanded+One&family=Rubik+Bubbles&family=Rubik+Puddles&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=BhuTuka+Expanded+One&family=Edu+SA+Beginner&family=Rubik+Bubbles&family=Rubik+Puddles&display=swap');
 
+.background-image{
+  background-image: url("../background_image/about_space.jpeg");
+  background-size: cover; 
+  margin-top: -30px;
+}
 
 .container{
   margin-top: 110px;
@@ -30,10 +35,15 @@
 /*Screen resizing*/
 @media only screen and (max-width: 500px){
   .background-image{
+    background-size: cover; 
+  }
+
+  .container{
     margin-top: 150px;
   }
   .rotating-text h1{
     font-size: 100%;
+    margin-top: 30px;
   }
 
   .description{
@@ -42,6 +52,10 @@
 }
 
 @media (min-width: 520px){
+  .background-image{
+    margin-bottom: 30px;
+  }
+  
   .moon-container {
     max-width: 400px;
     max-height: 300px; 
