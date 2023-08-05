@@ -8,7 +8,7 @@ const Navigation = () => {
   return (
     <>
   <Navbar collapseOnSelect expand="lg" variant="dark" bg="dark" fixed="top" >
-        <Navbar.Brand href="/" class="collapse navbar-collapse">
+        <Navbar.Brand href="/ufo-sightings-app" class="collapse navbar-collapse">
               <img
                 src= {Image}
                 alt="alien logo"

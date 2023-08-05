@@ -16,6 +16,7 @@ function App() {
     <div className="container">
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/ufo-sightings-app" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/sightings" element={<Sightings />} />
         <Route path="/media" element={<Media />} />
