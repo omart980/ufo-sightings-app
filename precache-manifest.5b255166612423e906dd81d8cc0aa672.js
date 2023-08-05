@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "29be1b11a780ba1e6762",
+    "revision": "794a2043e23b78b91f40",
     "url": "/ufo-sightings-app/static/css/main.a7d6141c.chunk.css"
   },
   {
-    "revision": "29be1b11a780ba1e6762",
-    "url": "/ufo-sightings-app/static/js/main.81da51b9.chunk.js"
+    "revision": "794a2043e23b78b91f40",
+    "url": "/ufo-sightings-app/static/js/main.38565833.chunk.js"
   },
   {
     "revision": "3a83cf4e8be7364c29cd",
@@ -132,7 +132,7 @@ self.__precacheManifest = [
     "url": "/ufo-sightings-app/static/media/media_earthat.b0a1fc60.jpg"
   },
   {
-    "revision": "5bdd521a7f526257b942372c8c890f84",
+    "revision": "8073d7670291c9e3d8cda90bd373e9d5",
     "url": "/ufo-sightings-app/index.html"
   }
 ];

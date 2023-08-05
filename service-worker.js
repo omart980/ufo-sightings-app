@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/ufo-sightings-app/precache-manifest.faf2afee8d1a7b0e89caaea1e1782392.js"
+  "/ufo-sightings-app/precache-manifest.5b255166612423e906dd81d8cc0aa672.js"
 );
 
 workbox.clientsClaim();
