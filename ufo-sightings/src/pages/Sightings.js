@@ -1,10 +1,29 @@
 import React from "react";
 import "./Sightings.css";
-import star from "../background_image/sightings_star.png";
+//import star from "../background_image/sightings_star.png";
 
 const Sightings = () => {
   return (
-    <div className="image-container ">
+    <div class="image-container">
+      <div class="row">
+        <div class="col-sm">
+         
+        </div>
+        <div class="col-sm">
+         
+        </div>
+        <div class="col-sm">
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Sightings;
+
+/**
+ * 
+ *     <div className="image-container ">
       <div className="big-dipper">
         <div className="star-images">
           <a href="https://www.britannica.com/topic/unidentified-flying-object/Other-investigations-of-UFOs" target="_blank" rel="noopener noreferrer">
@@ -43,7 +62,4 @@ const Sightings = () => {
         </div>
       </div>
     </div>
-  );
-};
-
-export default Sightings;
+ */
